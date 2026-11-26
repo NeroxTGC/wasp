@@ -23,7 +23,7 @@ Make sure you have a Wasp project set up. If you haven't, follow the [Quick star
 
 ## When You Need This
 
-By default, Wasp configures CORS in production to allow requests only from your client URL (defined by `WASP_WEB_CLIENT_URL`). In development, it allows requests from every origin, so you'll only see the effect of this guide in production. You might need to support multiple domains when:
+By default, Wasp configures CORS to allow requests only from your client URL (defined by `WASP_WEB_CLIENT_URL`). You might need to support multiple domains when:
 
 - You have multiple domains for the same client application
 - You're building a public API
@@ -115,9 +115,9 @@ export const getGlobalMiddleware: MiddlewareConfigFn = (middlewareConfig) => {
 };
 ```
 
-Then set the environment variable on your production server:
+Then in your `.env.server`:
 
-```bash
+```bash title=".env.server"
 CORS_ALLOWED_DOMAINS=https://app.example.com,https://admin.example.com
 ```
 
@@ -161,18 +161,13 @@ For complete control over CORS, you can set all options:
 
 ```ts title="src/middleware.ts"
 import cors from "cors";
-import { config, type MiddlewareConfigFn } from "wasp/server";
+import { MiddlewareConfigFn } from "wasp/server";
 
-export const getGlobalMiddleware: MiddlewareConfigFn = (middlewareConfig) => {
-  middlewareConfig.set(
+export const getGlobalMiddleware: MiddlewareConfigFn = (config) => {
+  config.set(
     "cors",
     cors({
-      origin: [
-        // Keep the origins Wasp allows by default.
-        ...config.allowedCORSOrigins,
-        "https://app.example.com",
-        "https://admin.example.com",
-      ],
+      origin: ["https://app.example.com", "https://admin.example.com"],
       methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
       allowedHeaders: ["Content-Type", "Authorization"],
       credentials: true,
@@ -180,7 +175,7 @@ export const getGlobalMiddleware: MiddlewareConfigFn = (middlewareConfig) => {
     }),
   );
 
-  return middlewareConfig;
+  return config;
 };
 ```
 

@@ -72,7 +72,7 @@ export default app({
 })
 ```
 
-Read more about the `usernameAndPassword` auth method options in the [`UsernameAndPasswordConfig` API Reference](../../../api/@wasp/spec.md#usernameandpasswordconfig).
+Read more about the `usernameAndPassword` auth method options in the [`UsernameAndPasswordConfig` API Reference](../../../api/@wasp/spec/interfaces/UsernameAndPasswordConfig.md).
 
 ### 2. Add the User Entity
 
@@ -223,7 +223,7 @@ Let's create a `auth.{jsx,tsx}` file in the `src/pages` folder and add the follo
   </TabItem>
 </Tabs>
 
-We imported the generated Auth UI components and used them in our pages. Read more about [the Auth UI components](../ui).
+We imported the generated Auth UI components and used them in our pages. Read more about the Auth UI components [here](../ui).
 
 ### Conclusion
 
@@ -246,22 +246,17 @@ When you receive the `user` object [on the client or the server](../overview.md#
 ## API Reference
 
 <CardLink
-  to="../../../api/@wasp/spec#auth-3"
+  to="../../../api/@wasp/spec/interfaces/Auth"
   kind="api"
   title="Auth"
   description="All the options for the auth field of the app spec, including userEntity."
 />
 
 <CardLink
-  to="../../../api/@wasp/spec#usernameandpasswordconfig"
+  to="../../../api/@wasp/spec/interfaces/UsernameAndPasswordConfig"
   kind="api"
   title="UsernameAndPasswordConfig"
   description="All the options for the usernameAndPassword auth method."
 />
 
-<CardLink
-  to="../../../api/wasp/server/auth#defineusersignupfields"
-  kind="api"
-  title="defineUserSignupFields"
-  description="Define the extra fields Wasp saves on the user entity when a user signs up."
-/>
+Read more about the `userSignupFields` function in the [Auth Overview docs](../overview.md#signup-fields-customization).

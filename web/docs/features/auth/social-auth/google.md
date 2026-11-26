@@ -324,7 +324,7 @@ When you receive the `user` object [on the client or the server](../overview.md#
 ## API Reference
 
 <CardLink
-  to="../../../api/@wasp/spec#socialauthconfig"
+  to="../../../api/@wasp/spec/interfaces/SocialAuthConfig"
   kind="api"
   title="SocialAuthConfig"
   description="All the options for the google auth method."

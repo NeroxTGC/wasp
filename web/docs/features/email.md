@@ -5,6 +5,8 @@ sidebar_label: Email
 ---
 
 import { CardLink } from '@site/src/components/CardLink'
+import { Required } from '@site/src/components/Tag'
+import { ShowForTs, ShowForJs } from '@site/src/components/TsJsHelpers'
 
 # Sending emails
 
@@ -225,7 +227,7 @@ RESEND_API_KEY=
 ### `emailSender` specification
 
 <CardLink
-  to="../api/@wasp/spec#emailsender-1"
+  to="../api/@wasp/spec/interfaces/EmailSender"
   kind="api"
   title="EmailSender"
   description="All the options for the emailSender field of the app spec."
@@ -233,9 +235,50 @@ RESEND_API_KEY=
 
 ### JavaScript API
 
-<CardLink
-  to="../api/wasp/server/email#emailsender-1"
-  kind="api"
-  title="emailSender"
-  description="Send emails from your server code, and all the fields of an email."
-/>
+Using the `emailSender` in <ShowForTs>Typescript</ShowForTs><ShowForJs>JavaScript</ShowForJs>:
+
+```ts title="src/actions/sendEmail.ts" auto-js
+import { emailSender } from "wasp/server/email";
+
+// In some action handler...
+const info = await emailSender.send({
+  from: {
+    name: "John Doe",
+    email: "john@doe.com",
+  },
+  to: "user@domain.com",
+  subject: "Saying hello",
+  text: "Hello world",
+  html: "Hello <strong>world</strong>",
+});
+```
+
+The `send` method accepts an object with the following fields:
+
+- `from: object`
+
+  The sender's details. If you set up the `defaultFrom` field in the `emailSender` config in your Wasp file, this field is optional.
+
+  - `name: string`
+
+    The name of the sender.
+
+  - `email: string`
+
+    The email address of the sender.
+
+- `to: string` <Required />
+
+  The recipient's email address.
+
+- `subject: string` <Required />
+
+  The subject of the email.
+
+- `text: string` <Required />
+
+  The text version of the email.
+
+- `html: string` <Required />
+
+  The HTML version of the email

@@ -9,6 +9,7 @@ import {
 } from "../lib/analytics";
 import CodeHighlight from "./CodeHighlight";
 import SectionContainer from "./Layouts/SectionContainer";
+import TextLink from "./TextLink";
 
 const installCmd = "npm i -g @wasp/cli@latest";
 
@@ -110,7 +111,7 @@ export function MainPage() {
     name: "tasks.ts",
     language: "typescript",
     source: `import { type GetTasks } from "wasp/server/operations";
-import { HttpError } from "wasp/errors";
+import { HttpError } from "wasp/server";
 import { Task } from "wasp/entities";
 
 export const getTasks: GetTasks<void, Task[]> = async (
@@ -199,31 +200,30 @@ const Hero = () => {
         <div className="z-10 flex flex-col justify-between gap-12 xl:col-span-6 xl:min-w-0">
           {/* Hero title and subtitle */}
           <div>
+            <div className="mb-7 hidden border border-wasp-g3 px-3 py-1 text-[11px] uppercase tracking-[3px] text-wasp-g7 md:inline-block">
+              Full-Stack Framework for the AI Era
+            </div>
             <h1
               className={`text-4xl font-extrabold uppercase leading-[1.2] tracking-[-2px] text-wasp-black lg:text-[52px]`}
             >
-              Move{" "}
+              A truly{" "}
               <span className="inline-block bg-wasp-yellow px-2 leading-[1.1]">
-                fast
+                full-stack
               </span>{" "}
-              and{" "}
+              TypeScript framework that{" "}
               <span className="inline-block bg-wasp-yellow px-2 leading-[1.1]">
-                understand
-              </span>{" "}
-              things.
+                just works.
+              </span>
             </h1>
 
-            <p className="mt-6 max-w-[500px] text-base leading-[1.75] text-wasp-g6">
-              Wasp is a batteries-included web framework with a{" "}
-              <span className="font-bold">
-                Spec - describe your full-stack web app in TypeScript
-              </span>
-              , instead of assembling it piece by piece.
-              <span className="mt-3 block">
-                Auth, RPC, APIs, jobs, email, WebSockets, and more.
-              </span>
-              <span className="mt-3 block font-bold">
-                React &amp; Node.js. Deploy anywhere.
+            <p className="mt-6 max-w-[460px] text-base leading-[1.75] text-wasp-g6">
+              React, Node.js, and Prisma - wired together with auth, jobs, and
+              deployment built in. Ship in a day and own every line.
+              <span className="mt-1 block font-bold">
+                Designed for humans,{" "}
+                <TextLink to="#ai" variant="purple" className="text-wasp-g6">
+                  works beautifully with AI.
+                </TextLink>
               </span>
             </p>
           </div>{" "}

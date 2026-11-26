@@ -11,7 +11,7 @@
             "file",
             "Dockerfile"
         ],
-        "e5e025ba7cb87c986778827edcb92f93d2f796fc35016aeb0af90ebb5293df2a"
+        "64944787a133365880964d0ca19ba39a63ba82fe1ef8abf27a0ae9cc0c1f3cb6"
     ],
     [
         [
@@ -32,35 +32,35 @@
             "file",
             "libs/auth/wasp-lib-auth-0.27.0.tgz"
         ],
-        "3074a952f57ccad596b6a24ff9646ef2fbab39e22b313ae06b884324f47bcd92"
+        "3a51f269d82bbbde51d32af23b83321af84a6a12fb39be56fda061b9650d018b"
     ],
     [
         [
             "file",
             "libs/sdk-core/wasp-lib-sdk-core-0.27.0.tgz"
         ],
-        "788424dae8b5e452959d23f7ba31bf55230f376d250254d097cff1717d5920f9"
+        "d81a5f1daf72d93878922ae41d9d25006f26595128dd6c7f82901bc808d31501"
     ],
     [
         [
             "file",
             "libs/test-utils/wasp-lib-test-utils-0.27.0.tgz"
         ],
-        "f34e265ab908f4780e6290882eb0a47b8f5025fa2eaf09b33c56a2bdf425ccdc"
+        "244a187f6c689efcb977edd54bbb89d70ff01d170df5f3f6789ea1485ac02e8f"
     ],
     [
         [
             "file",
             "libs/vite-ssr/wasp-lib-vite-ssr-0.27.0.tgz"
         ],
-        "df16313ed5f0aea191f51b631556c568c009bc55a16525ef39bfd9ec02bcbb5c"
+        "30122768ac666defb754781fe1b81f7666781961a4f0b6fc03a7c3a4f7d5565b"
     ],
     [
         [
             "file",
             "sdk/wasp/api/index.ts"
         ],
-        "cee7e189c197b77391278e5fa20d9d1f0aa504e9a03a7e32b7ca1f17b7f19ea8"
+        "065a9e07a5f0e9950c9de8760b1f711f0e099beb9564257ff68fe46838685ac7"
     ],
     [
         [
@@ -151,7 +151,7 @@
             "file",
             "sdk/wasp/auth/forms/internal/common/LoginSignupForm.tsx"
         ],
-        "82d31f1f796032a1c63eebe2a2ff8d6d3ec1986ec1716fa83c4859a672da4218"
+        "da708990ad64a084509f433b37a1460004fb6718d11319cc473b0503dc043324"
     ],
     [
         [
@@ -165,7 +165,7 @@
             "file",
             "sdk/wasp/auth/forms/internal/email/ResetPasswordForm.tsx"
         ],
-        "8c05cdf5467ced2426d5abc46f07d959cf2b48e0ab40828bcb3949f43cb7090f"
+        "337daef5af4b499227a1da3e2e270b64e4290b9cee55655434cd07ab685ab1bd"
     ],
     [
         [
@@ -228,14 +228,14 @@
             "file",
             "sdk/wasp/auth/index.ts"
         ],
-        "2d6fbda20b5c671b39c9b350f442a020f46f68b7d15a28303e607a2c72527afd"
+        "318a6569cf9622966c0a918736d24733d54b6db70653d34e1358d53a5dab99fa"
     ],
     [
         [
             "file",
             "sdk/wasp/auth/logout.ts"
         ],
-        "c45e29b4442f9ede6e09d7046621529132d788ee14cdd14060e9f67efa4a36f4"
+        "b9c0944d3aa08cd071cf33e49275e5739416158b78c4a3515814f35667dec3eb"
     ],
     [
         [
@@ -270,7 +270,7 @@
             "file",
             "sdk/wasp/auth/validation.ts"
         ],
-        "c014a48cb982fa3480fa75ba507ac1ca3d902ac93b983c3b235b4341ac17e82a"
+        "cf71c3979b4fe1bae042b6f46b8763597aee3042a661510b7df63a190e41fc01"
     ],
     [
         [
@@ -284,7 +284,7 @@
             "file",
             "sdk/wasp/client/app/index.tsx"
         ],
-        "4e5b23da69f43a733851daa4aabd3fbede59b4f663b3609c2f918bd3944c16de"
+        "461f35b62fc05d0060aa9dcffb5b31ec0b1c4988399bb802f9c8dd453892c5b2"
     ],
     [
         [
@@ -298,7 +298,7 @@
             "file",
             "sdk/wasp/client/app/pages/OAuthCallback.tsx"
         ],
-        "b8f628b0f8ea9fab0eaf60439826d9b32514d8f7891c79649fb4c5c3c20dfeba"
+        "eff479f145c13b35603968c2d9d2e0905c46accf38bfe28b81e1523e6ccc58d7"
     ],
     [
         [
@@ -347,7 +347,7 @@
             "file",
             "sdk/wasp/client/auth/index.ts"
         ],
-        "d626fe60871359d4af18be0920f90e3f31ff1ac108480c3c48a5a1320c2ee4bc"
+        "d637e7f7ac33a73ed335a6c8889dc43e6a6cf23035aec8b0ab062e88f6d7c2e6"
     ],
     [
         [
@@ -417,7 +417,7 @@
             "file",
             "sdk/wasp/client/index.ts"
         ],
-        "d82116d1549af75c31a10b92c7d6c0fac03e582f15af23ccbd9e261347137f01"
+        "3282aa52ac89b35117e4a80f656a2c22b713fbd49c50f02c6abd3c145e3b7556"
     ],
     [
         [
@@ -459,7 +459,7 @@
             "file",
             "sdk/wasp/client/operations/queries/index.ts"
         ],
-        "0f767b8228eee4aef8c17d5ea16b3231b43897075bd5990f7fe7683622312032"
+        "e54ce3eb4d488b338fb30b10b15ca155abc3c90de29824f52bee95af47842753"
     ],
     [
         [
@@ -480,14 +480,21 @@
             "file",
             "sdk/wasp/client/router/index.ts"
         ],
-        "44be0a36596e56cd5cb07ffb5948ee8fdbadd06383dc0ce871bdd73b61147d80"
+        "0dd26163f8a4503a89f5c8170c3cffb13f2862449029ef28e4c1c84f52f069e5"
     ],
     [
         [
             "file",
             "sdk/wasp/client/test/index.ts"
         ],
-        "1e11ec499f6ced0883b05c13691eb9a1623e7e86d96351fb9ad1e59dff9573ba"
+        "8316f506645ea0e80a131fd5dc2a033f6cb0db9c2b1616b372aa394c860dfa65"
+    ],
+    [
+        [
+            "file",
+            "sdk/wasp/client/test/setup.ts"
+        ],
+        "610e936776aaa39e861f0b2a83b0c0290d74ca8123d9d5409e5f2183384fdb52"
     ],
     [
         [
@@ -501,7 +508,7 @@
             "file",
             "sdk/wasp/client/vite/plugins/virtualUserModules.ts"
         ],
-        "004edfbc13d8a60497c2632392ff892a50805aab968b9ae061fe0026147fb738"
+        "615f5019d93bf6be2ecec4f8d47f906ab1de408ce5e6764df3511fe83a4fbcd4"
     ],
     [
         [
@@ -522,21 +529,21 @@
             "file",
             "sdk/wasp/client/vite/plugins/waspConfig.ts"
         ],
-        "0cccd567e30ce1a8e3f3b24a19045066e3e0849547e319836bf133f0078363e4"
+        "a6e161621feadedd327dff3078aba6c5977c63ee472259ad39000aa83764712b"
     ],
     [
         [
             "file",
             "sdk/wasp/client/vite/virtual-files/files/client-entry.tsx"
         ],
-        "d60aed5dd8176528330ccf9578d06a0cb9c723f98f9e6b5307aefbe796f6f487"
+        "c1f5639079fdc9860463228e7a68b5a8b82db324cee5514eb5833a7226dbd343"
     ],
     [
         [
             "file",
             "sdk/wasp/client/vite/virtual-files/files/routes.tsx"
         ],
-        "8782597847f578892252446fd22b488e7ea8fde64945679b2a7180780ad548b2"
+        "19e69852a06e3c9d6478f3498c34709d500fd7735b9a3a1b9004e14f6ddd63d6"
     ],
     [
         [
@@ -597,16 +604,9 @@
     [
         [
             "file",
-            "sdk/wasp/errors/index.ts"
-        ],
-        "38311cca15110fc87b4ae93e7632491a41b3e19990c52d4906f991194fd265f5"
-    ],
-    [
-        [
-            "file",
             "sdk/wasp/package.json"
         ],
-        "32e2e0bf15a9af3b211816ebf9ca88a1b176d13d799ad0307fd54a44dc684e8e"
+        "5c17c627a50ce19f6f4cbdffe70d70a236899db4727c2f37799b69f20f5ec2ce"
     ],
     [
         [
@@ -620,7 +620,7 @@
             "file",
             "sdk/wasp/scripts/copy-assets.js"
         ],
-        "2adba4b8fee21018494b854b81303df0e7ecbdc3cc1d75678732b25781c91837"
+        "0b7e3d7a0238faae3d97c43c50dfcbcfb088b769632046048ff78f8970e1d55b"
     ],
     [
         [
@@ -648,7 +648,7 @@
             "file",
             "sdk/wasp/server/api/index.ts"
         ],
-        "99febcd43fe2861ca735f85e6a354d61b71127f484fad3b134a4273a7214cd54"
+        "3e4d5c07d860c2c3ae26c8a8e2df3d9b456096b2c94b44645dfc7201059e39a9"
     ],
     [
         [
@@ -676,7 +676,7 @@
             "file",
             "sdk/wasp/server/auth/index.ts"
         ],
-        "e9455e321485626e9710a20069b4da2188bdb77501aa8acf4274ee985f68e5d1"
+        "68ec8a81f73658dac521894948819eac796db48c08426d92709e98a894d735bd"
     ],
     [
         [
@@ -746,7 +746,7 @@
             "file",
             "sdk/wasp/server/auth/oauth/redirect.ts"
         ],
-        "262a39431df95f16d9493aeaeabe15aba20abb1f9dd8da7289c5e45afa72d9ce"
+        "70fa83f939362b20385b843df598e2adbfb0118bd3bf65d65415a1039385b1db"
     ],
     [
         [
@@ -767,7 +767,7 @@
             "file",
             "sdk/wasp/server/auth/utils.ts"
         ],
-        "20e01ac14517ef04bcd07d168a9bae28fa6021688860de50a3f1deda8f8930e1"
+        "107b57551fd41c8ebfd32be89ad86f2be77c7f8766bdc78eab4644a0b05d874e"
     ],
     [
         [
@@ -856,16 +856,37 @@
     [
         [
             "file",
+            "sdk/wasp/server/errors/httpErrors.ts"
+        ],
+        "2afe5d218b2e100871472f9bae27afd2de972c84e7c4d26f280b83dc30bf0b1d"
+    ],
+    [
+        [
+            "file",
             "sdk/wasp/server/errors/index.ts"
         ],
-        "2432cb67cb912d3e04e631e82eeae60c7ef89452e6c8bb656281f1f39f324bac"
+        "afa8c3a0c3c4f65038dd2bc15c70ce25d002882633769266259ec1c250f907b6"
+    ],
+    [
+        [
+            "file",
+            "sdk/wasp/server/errors/unknownErrors.ts"
+        ],
+        "7c5787a2fc4b5cb862c8d5004061892627006c7688b383ee39ad69c3d1c199d1"
+    ],
+    [
+        [
+            "file",
+            "sdk/wasp/server/errors/utils.ts"
+        ],
+        "6ddbdd142ee3764cd9a6b928da9d38b413da6b080cd0258ba8f966d9762cb6f8"
     ],
     [
         [
             "file",
             "sdk/wasp/server/index.ts"
         ],
-        "68855bdd0e06a7e6582e55c87b24b9e1d3fdeec3f85c475c6811848d3dc315ad"
+        "db84e4671930ff007c64ea3850b1eaccd2647856ae96e5ea82ac2be6b8ec90af"
     ],
     [
         [
@@ -886,7 +907,7 @@
             "file",
             "sdk/wasp/server/jobs/core/pgBoss/pgBossJob.ts"
         ],
-        "e18a2ff185707ed949dfdce9959492a35055f7be83bb7abc701983494084ccfb"
+        "eaa4719ec3b41931225660f0a660bca6ac40c33497a4378073efb64e55496778"
     ],
     [
         [
@@ -949,21 +970,21 @@
             "file",
             "sdk/wasp/server/operations/index.ts"
         ],
-        "9fdbb18f7d1f56b74070de3a892283dedb0d069997d4dd02c0bbd377b993cb8b"
+        "3128d1af3bbc91274a568986a36c4dd0840c941c1e25f417022592cfd563a913"
     ],
     [
         [
             "file",
             "sdk/wasp/server/operations/queries/index.ts"
         ],
-        "a05681e9db7d560756c464d8572e1368b6d5ba07c3307e1d39177fcf7957c51f"
+        "71f84faa892088a4712db233190a1117a4703dd623e3c5049f1ed9009804b626"
     ],
     [
         [
             "file",
             "sdk/wasp/server/operations/queries/types.ts"
         ],
-        "d64bb86eeeb97796de9e95ff17935dc0b7b95ada55099227a90e6ad57c5abc8f"
+        "706169ea75c2b60aec702e6f5ab2cee3ed9a44b5987b866880f0e88a15d2e6b1"
     ],
     [
         [
@@ -992,13 +1013,6 @@
             "sdk/wasp/server/webSocket/index.ts"
         ],
         "f5f38234f2e6955ae5dc8868c4e1f2c3c8a6dad626192864f0b8e199db31f1e4"
-    ],
-    [
-        [
-            "file",
-            "sdk/wasp/test/index.ts"
-        ],
-        "3d3cb3d2032c2ea1c91cb0f6de7122fdb0544da764665cfccd8faf6a4daf4b4c"
     ],
     [
         [
@@ -1040,7 +1054,7 @@
             "file",
             "sdk/wasp/wasp-user-virtual-modules.d.ts"
         ],
-        "849b7f70b448126b46933ff903074cf835064c9120bfedfac565ad305aaf05e2"
+        "f86bed13b3be46d4f246cb0ef337295260204ecf52ba7b528f4a67d4030980b7"
     ],
     [
         [
@@ -1061,28 +1075,21 @@
             "file",
             "server/README.md"
         ],
-        "21cc62fbd5283f0e140d73854a35a714a618bd2c89765fb9f173e841040d8ed5"
+        "33e0f90140e4db138df7cdecf5ac1679b5ab50030f7f7f6600e98c97857af5a3"
     ],
     [
         [
             "file",
-            "server/loadDotEnv.cjs"
+            "server/nodemon.json"
         ],
-        "31a019e226b1c4c28ed560ae0efa6f840b63099f42a1d997508eaa277505f268"
+        "6cb3f8539e5cf59e29e3c97c9b4fa405600ea132784e4f47f79555951f47bd38"
     ],
     [
         [
             "file",
             "server/package.json"
         ],
-        "40468d431ab84379ccdde1288231541aafa55122dca7999d312b640fdd829e73"
-    ],
-    [
-        [
-            "file",
-            "server/prepareProduction.ts"
-        ],
-        "021b65f62a50c8548f1399540132d86ea87bfe3390299da1c707fa13f29ffe64"
+        "bc4ef863775c85638f68cd4dd5f973c695dc97dc2613efe929e579ff25216456"
     ],
     [
         [
@@ -1229,7 +1236,7 @@
             "file",
             "server/src/app.js"
         ],
-        "d3bfe80cd0442d79d0641ebc6f345dfe0dfee756cf5bfe998502bbc54537c5ab"
+        "bd16da1d89d3b49580c7ff1e33191159bab7610e314bfcdaff7eb5653c7c862e"
     ],
     [
         [
@@ -1250,7 +1257,7 @@
             "file",
             "server/src/auth/providers/config/email.ts"
         ],
-        "fdec43f8c51611f95478af8054ee678f4cb1df78fe3cdd5d91307ad2ec5408f7"
+        "2b4559a1bfe631d9da6ca302b0b3ef00b9ac8cc508f859e15480d09a274cbedb"
     ],
     [
         [
@@ -1285,35 +1292,35 @@
             "file",
             "server/src/auth/providers/email/login.ts"
         ],
-        "ecf8e0f6713fd21ab576e35a5be8f2b191f5f3e86b30b70da81b5071d1e67ef4"
+        "766d2b6a186a1f16e4aba25d53a4ae38f0b7da8730e7827d2ae400c7544faff5"
     ],
     [
         [
             "file",
             "server/src/auth/providers/email/requestPasswordReset.ts"
         ],
-        "66786afb361f19b6d4071577956b69e54146550ec4363fc85aeb1383fef433b7"
+        "1936facb5dac8641ada0db5d6946be08603c07f4f441c2f22140b49bb3e21d04"
     ],
     [
         [
             "file",
             "server/src/auth/providers/email/resetPassword.ts"
         ],
-        "4280753df6819770ca9bf9ff31bad7a978b821f14ee9ac9ace55542674ff9ad3"
+        "f280cb3434c959b47f9fc7ba3ad8ba8921d7f24813c44be8ed8e80538f1fff9c"
     ],
     [
         [
             "file",
             "server/src/auth/providers/email/signup.ts"
         ],
-        "2c5077a2dc8959b2d600c175d682a5ae0a3ceb2ad724c3770498dcc733e32f3d"
+        "e85d803697f4d48ddfb030febbbd321fc8579fae9d79ac24c9f3996726c62422"
     ],
     [
         [
             "file",
             "server/src/auth/providers/email/verifyEmail.ts"
         ],
-        "5b67bddbc3d5a4c75a01b03f3160fdeaccbecddf14e0271556e0f7ed7d63c29a"
+        "d3b75adf041988926a97b741a5d7cf01d9c96904411ba34242f673c5da02e572"
     ],
     [
         [
@@ -1334,28 +1341,28 @@
             "file",
             "server/src/auth/providers/oauth/cookies.ts"
         ],
-        "d3516c5897a6d1ba4964b07735302ef25cbd473fa3ba6d236cdcf4cd7aa65711"
+        "8941684c6b3d452a7724f51182cff4abdc782daf84b708216c39e8ecc63b4925"
     ],
     [
         [
             "file",
             "server/src/auth/providers/oauth/handler.ts"
         ],
-        "7e87f1b3c72437695df8086acc35b0ff9703ff769d85e6a649384b058649a887"
+        "d46a9a950d2ba172ef9e7ae18c7361561e0e07a76bc0f1bb555a1e836c3ec1dc"
     ],
     [
         [
             "file",
             "server/src/auth/providers/oauth/oneTimeCode.ts"
         ],
-        "5c345ab96269def3f33c35b254822c503ac8bb18eca013323ca9b2e660c74639"
+        "52488a7a332fdc827b2f7a11cc3b1a8c6cc117f2c126b9b85988e97e5ace3cad"
     ],
     [
         [
             "file",
             "server/src/auth/providers/oauth/state.ts"
         ],
-        "78a2e57457b89535c13224e48b8b6c7026c0423957add30af691fe0e263f3bc6"
+        "772fd49c04eff2f47701565175c9756787d8548db3c4af190ce3420208bd4919"
     ],
     [
         [
@@ -1369,7 +1376,7 @@
             "file",
             "server/src/auth/providers/oauth/user.ts"
         ],
-        "fb669e1a5d7eeca4f9f0a011cf98febadf8f6c895c6eabd5635817b9c21abd84"
+        "70c10d31134efc795abb2f38a3c1a81dbbb21a2806551d74867df1f8a80dee42"
     ],
     [
         [
@@ -1383,7 +1390,7 @@
             "file",
             "server/src/crud/taskVotes.ts"
         ],
-        "f2d3f80a7223d00f9e4d5d79510b2e1bf4f38354731ef29590c9b9d597b5337a"
+        "b12e5eedb5cf9dc9d4316bdd731a142172fd59c9b51f94faa3361f0e2a294c45"
     ],
     [
         [
@@ -1397,7 +1404,7 @@
             "file",
             "server/src/dbSeed.ts"
         ],
-        "1e5e7ed79bb75d1cb3d6f4b81065a7542050f2c01544a55d07b071fb425eb3cf"
+        "fa1ab2adddbee4b0785116c1faea86abe3b2668d9c1094f98e28ac5c150237be"
     ],
     [
         [
@@ -1453,7 +1460,7 @@
             "file",
             "server/src/plugins/virtualUserModules.js"
         ],
-        "98551db2f7bdccf3a737d7de51026259e9a60d96f87395341c7b9f700a4e94ba"
+        "7d01a92b6b6462bede6e2eda16b765a920a9d9a87b29ad09b16abe60992816ec"
     ],
     [
         [
@@ -1535,13 +1542,6 @@
     [
         [
             "file",
-            "server/src/queries/getTeapot.ts"
-        ],
-        "0fba390eb4f97192afe9832fbaa458c71d17231037719a1d6fbb997dfcd751de"
-    ],
-    [
-        [
-            "file",
             "server/src/queries/getTextUppercaseRequests.ts"
         ],
         "197c1f2a0324334be4a34c0528c341b22f8f3445c5671e28e87e892215220a95"
@@ -1558,7 +1558,7 @@
             "file",
             "server/src/routes/apis/index.ts"
         ],
-        "e6d3300dcbfda04e75f74f915b12f451435523320c88adf6dd744c0e356cc3db"
+        "ab101afc1dcc6d5d0d7a14eb3eb02359f49746ff302b8aea29e93b657723d7f9"
     ],
     [
         [
@@ -1738,13 +1738,6 @@
     [
         [
             "file",
-            "server/src/routes/operations/getTeapot.js"
-        ],
-        "38467d8c756a39ad3b6754058d25017b7919a0a00e77d79b9cb8911ace743b23"
-    ],
-    [
-        [
-            "file",
             "server/src/routes/operations/getTextUppercaseRequests.js"
         ],
         "d91fe99406de1e7a3ece3fe9e5c2e8a8313fea238e43144acf3edab6f0ea8833"
@@ -1761,7 +1754,7 @@
             "file",
             "server/src/routes/operations/index.js"
         ],
-        "4ba160e8ddb5d43d625af8064f21d53d4ee29a8327a10792d6400b2651c951dc"
+        "8082922c159fc079b7f25b871e24fafcaf1e449646189ca4e0bef7cb53de84df"
     ],
     [
         [
@@ -1845,42 +1838,35 @@
             "file",
             "server/src/server.ts"
         ],
-        "8c40a9b2a81d62409a883d61c7ecf0d9b98780953e3ac03d2cc9dc66b7844e65"
-    ],
-    [
-        [
-            "file",
-            "server/src/uncaughtErrors.ts"
-        ],
-        "63af718a3d0ddc52fb0cdc695641d947993b3c5793020dace1b6eac1c6eed9f7"
+        "49d12abf8119bf9e2e59b9e4999f356647d6bf135f5b5190046ace7c8ba65580"
     ],
     [
         [
             "file",
             "server/src/views/wrong-port.ts"
         ],
-        "8747e8dc73cf909eb9911de69b711439e205f3ea4963f2a98b52190eed00f68e"
+        "cc8fc19e919c4d22ec6095a60446dd4f52dc864112e6b379ae35ec45c5b04b16"
     ],
     [
         [
             "file",
             "server/src/webSocket/initialization.ts"
         ],
-        "7f4623c19630f436704241d26cdb4dabff69211e594774a0b8ec94300158ebc9"
+        "77a0bfb8ce02893ee3534205d5655cb45f66f7a8a2656552ac1f4b5aaae7c649"
     ],
     [
         [
             "file",
             "server/tsconfig.json"
         ],
-        "aabaec15363fb0061d52769969e5a2e4f7389411f63f7f8d14fc31e5277975a1"
+        "09ae9bcde379c54456481290933e8101a72f5bb84198c86a684ca89fe8956320"
     ],
     [
         [
             "file",
             "types/app/sdk/register.ts"
         ],
-        "fad6c8c079e17b2f0ac90b587137dc692eabaa4aab1cd5eb0ff0ead583e56c74"
+        "081639ad8281350272f01e9aab3752d0c8236adaec034abf6b124cd74579361d"
     ],
     [
         [
