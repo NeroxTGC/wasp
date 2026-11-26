@@ -5,6 +5,7 @@ description: Declare pages and routes in a Wasp app, read URL parameters, link w
 ---
 
 import { CardLink } from '@site/src/components/CardLink'
+import { Required } from '@site/src/components/Tag'
 
 # Pages and routes
 
@@ -364,41 +365,117 @@ See the [Prerendering](../advanced/prerendering.md) page for the full documentat
 ### `page` and `route` specifications
 
 <CardLink
-  to="../api/@wasp/spec#page-2"
+  to="../api/@wasp/spec/functions/page"
   kind="api"
   title="page"
-  description="All the options for declaring a page in the Wasp Spec."
+  description="All the options for declaring a page in the Wasp spec."
 />
 
 <CardLink
-  to="../api/@wasp/spec#route-1"
+  to="../api/@wasp/spec/functions/route"
   kind="api"
   title="route"
-  description="All the options for declaring a route in the Wasp Spec."
+  description="All the options for declaring a route in the Wasp spec."
 />
 
-### `wasp/client/router`
+### `Link` Component
 
-<CardLink
-  to="../api/wasp/client/router#link"
-  kind="api"
-  title="Link"
-  description="All the props of the type-safe Link component."
-/>
+The `Link` component accepts the following props:
 
-<CardLink
-  to="../api/wasp/client/router#navlink"
-  kind="api"
-  title="NavLink"
-  description="All the props of the type-safe NavLink component, and its render-prop functions."
-/>
+- `to` <Required />
 
-<CardLink
-  to="../api/wasp/client/router#routes"
-  kind="api"
-  title="routes"
-  description="The object for building the URL of each route, with its params, search, and hash."
-/>
+  - A valid Wasp Route path from your `main.wasp.ts` file.
+
+    In the case of optional static segments, you must provide one of the possible paths which include or exclude the optional segment. For example, if the path is `/task/:id/details?`, you must provide either `/task/:id/details` or `/task/:id`.
+
+- `params: { [name: string]: string | number }` <Required /> (if the path contains params)
+
+  - An object with keys and values for each param in the path.
+  - For example, if the path is `/task/:id`, then the `params` prop must be `{ id: 1 }`. Wasp supports required and optional params.
+
+- `search: string[][] | Record<string, string> | string | URLSearchParams`
+
+  - The search params, in any shape the [`URLSearchParams`](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams) constructor accepts.
+  - For example, the object `{ sortBy: 'date' }` becomes `?sortBy=date`.
+
+- `hash: string`
+
+- All other props that the `react-router`'s [Link](https://reactrouter.com/8.0.1/api/components/Link) component accepts
+
+### `NavLink` Component
+
+The `NavLink` component accepts the same `to`, `params`, `search`, and `hash` props as the [`Link` component](#link-component), plus:
+
+- All other props that the `react-router`'s [NavLink](https://reactrouter.com/8.0.1/api/components/NavLink) component accepts
+
+  The most useful ones are:
+
+  - `className`, `style`, and `children`
+
+    - Besides regular values, these can be functions. `NavLink` calls them with an object describing the link's state and uses what they return. The object has these fields:
+      - `isActive`: the link points to the current page.
+      - `isPending`: the user clicked the link, and the page is still loading.
+      - `isTransitioning`: a [view transition](https://reactrouter.com/8.0.1/how-to/view-transitions) to the page is in progress.
+
+  - `end: boolean`
+
+    - By default, a link is also active on nested paths. For example, a link to `/tasks` is active on `/tasks/123`. Set `end` to only make it active on its exact path.
+
+  - `caseSensitive: boolean`
+
+    - By default, the link ignores letter case when checking if it's active. Set `caseSensitive` to take case into account.
+
+### `routes` Object
+
+The `routes` object contains a function for each route in your app.
+
+```ts title="router.tsx"
+export const routes = {
+  // RootRoute has a path like "/"
+  RootRoute: {
+    build: (options?: {
+      search?: string[][] | Record<string, string> | string | URLSearchParams
+      hash?: string
+    }) => // ...
+  },
+
+  // DetailRoute has a path like "/task/:id/:userId?"
+  DetailRoute: {
+    build: (
+      options: {
+        params: { id: ParamValue; userId?: ParamValue; },
+        search?: string[][] | Record<string, string> | string | URLSearchParams
+        hash?: string
+      }
+    ) => // ...
+  },
+
+  // OptionalRoute has a path like "/task/:id/details?"
+  OptionalRoute: {
+    build: (
+      options: {
+        path: "/task/:id/details" | "/task/:id",
+        params: { id: ParamValue },
+        search?: string[][] | Record<string, string> | string | URLSearchParams
+        hash?: string
+      }
+    ) => // ...
+  },
+
+  // CatchAllRoute has a path like "/pages/*"
+  CatchAllRoute: {
+    build: (
+      options: {
+        params: { "*": ParamValue },
+        search?: string[][] | Record<string, string> | string | URLSearchParams
+        hash?: string
+      }
+    ) => // ...
+  },
+}
+```
+
+The `params` object is required if the route contains params. The `search` and `hash` parameters are optional.
 
 ### React Router API
 
