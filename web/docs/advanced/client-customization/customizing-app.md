@@ -68,7 +68,7 @@ export default app({
 ## API Reference
 
 <CardLink
-  to="../../api/@wasp/spec#app"
+  to="../../api/@wasp/spec/interfaces/App"
   kind="api"
   title="App"
   description="All the options for the app spec."

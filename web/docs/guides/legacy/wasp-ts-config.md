@@ -40,7 +40,6 @@ In the TS Config you could only reference your code with import objects (`{ impo
   </TabItem>
   <TabItem value="after" label="Wasp Spec">
     ```ts title="main.wasp.ts"
-    import { app, page, query, route } from "@wasp/spec";
     import MainPage from "./src/MainPage" with { type: "ref" };
     import { getTasks } from "./src/queries" with { type: "ref" };
 
@@ -74,7 +73,7 @@ See the [Wasp Spec documentation](../../features/spec.md#splitting-your-spec-int
 | Configuring the app       | `app.auth(...);` <br/> `app.server(...);` <br/> `app.client(...);` <br/> `app.db(...);` <br/> `app.emailSender(...);` <br/> `app.webSocket(...);` | <pre>app(\{<br/> auth: ...,<br/> server: ...,<br/> client: ...,<br/> db: ...,<br/> emailSender: ...,<br/> webSocket: ...,<br/>});</pre> |
 | Adding app specifications | `app.route(...);` <br/> `app.query(...);` <br/> `app.action(...);` <br/> etc                                                                      | <pre>app(\{<br/> spec: [<br/> route(...),<br/> query(...),<br/> action(...),<br/> ]<br/>});</pre>                                       |
 | Imports                   | `{ import, from }`                                                                                                                                | `import { ... } from "./src/..." with { type: "ref" };`                                                                                 |
-| Package name              | `wasp-config`                                                                                                                                     | `@wasp/spec`                                                                                                                         |
+| Package name              | `wasp-config`                                                                                                                                     | `@wasp/spec`                                                                                                                            |
 
 ### App and specifications
 
@@ -315,7 +314,7 @@ Wasp validates the Wasp Spec support files during migration, including the requi
           // ...
           "devDependencies": {
             // ...
-            "@types/node": "^26.0.0",
+            "@types/node": "^24.0.0",
             "@wasp/spec": "file:.wasp/spec"
           }
         }
