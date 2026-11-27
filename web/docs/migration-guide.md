@@ -645,6 +645,27 @@ On the client, `client.onError` also receives the errors that an error tracker c
 
 If you use Sentry, follow the updated [Sentry guide](./guides/integrations/sentry.md) for the full setup on both sides.
 
-### 15. Enjoy your updated Wasp app
+### 15. Pass raw values as path params
+
+`Link`, `NavLink`, and `routes.<name>.build()` now encode path params, so characters like `/`, `?`, and `#` stay inside the param. Pass the raw value and remove any manual `encodeURIComponent` call, otherwise the param gets encoded twice.
+
+<Tabs sideBySide>
+  <TabItem value="before" label="Before">
+    ```tsx
+    <Link to="/photo/:photoId" params={{ photoId: encodeURIComponent(name) }}>
+      Photo
+    </Link>
+    ```
+  </TabItem>
+  <TabItem value="after" label="After">
+    ```tsx
+    <Link to="/photo/:photoId" params={{ photoId: name }}>
+      Photo
+    </Link>
+    ```
+  </TabItem>
+</Tabs>
+
+### 16. Enjoy your updated Wasp app
 
 That's it!

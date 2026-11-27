@@ -192,6 +192,8 @@ export function NewPhotoForm() {
 }
 ```
 
+`Link`, `NavLink`, and `routes.<name>.build()` encode path params for you, so characters like `/`, `?`, and `#` stay inside the param. Pass raw values and don't call `encodeURIComponent` yourself, or the param gets encoded twice. The only exception is a splat (`*`) param, which keeps its `/` characters so it can span several segments.
+
 ### Reacting to navigation state with `NavLink`
 
 Use `NavLink` when the current page should be highlighted, or when you want to show a spinner during a pending transition. It behaves the same as [React Router's `NavLink`](https://reactrouter.com/8.0.1/api/components/NavLink), with added types for route paths and parameters. It is similar to [`Link`](#link-component), but `className`, `style`, and `children` can be render-prop functions that receive `{ isActive, isPending, isTransitioning }`.
