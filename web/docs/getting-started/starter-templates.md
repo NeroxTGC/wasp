@@ -34,9 +34,10 @@ Created a new Wasp app in `./MyFirstProject`.
 
 To run your new app, do:
     cd MyFirstProject
-    wasp db migrate-dev
     wasp start
 ```
+
+The `basic` template comes with an initial database migration already created and applied, so you can run `wasp start` right away. If `wasp new` can't do this (for example, dependency installation failed, or `DATABASE_URL` is set in your environment), it tells you which commands to run manually, such as `wasp install` and `wasp db migrate-dev`.
 
 ## Available Templates
 
