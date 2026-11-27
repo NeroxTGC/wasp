@@ -266,6 +266,8 @@ Make sure to pass in an object expected by the `QueryClient`'s constructor, as
 explained in
 [react-query's docs](https://tanstack.com/query/v4/docs/reference/QueryClient).
 
+By default, Wasp's `useQuery` retries a failed Query up to 3 times, except when the server responds with a `4xx` status code other than `408` and `429`. Client errors like these won't go away by asking again, so they show up right away. To change this, set `retry` in `defaultOptions.queries` (or pass `retry` to an individual `useQuery` call). Your value replaces Wasp's default.
+
 For the full description of the `setupFn` field, check the [`Client` API Reference](../../api/@wasp.sh/spec/interfaces/Client.md#setupfn).
 
 ## Base Directory
