@@ -220,6 +220,8 @@ You can change the options for a **single** Query using the `options` object, as
 
 Wasp's `useQuery` hook uses `react-query`'s `useQuery` hook under the hood. Since `react-query` comes configured with aggressive but sane default options, you most likely won't have to change those defaults for all Queries.
 
+Wasp changes one of those defaults: `useQuery` retries a failed Query up to 3 times, but it doesn't retry Queries that fail with a `4xx` status code (other than `408` and `429`). Client errors won't go away by asking again, so they show up right away. You can override this by setting `retry` in `defaultOptions.queries`, as shown below.
+
 If you do need to change the global defaults, you can do so inside the client setup function.
 
 Wasp exposes a `configureQueryClient` hook that lets you configure _react-query_'s `QueryClient` object:
