@@ -95,9 +95,10 @@ Created a new Wasp app in `./MyFirstProject`.
 
 To run your new app, do:
     cd MyFirstProject
-    wasp db migrate-dev
     wasp start
 ```
+
+For templates that use SQLite and define entities (currently `basic`), `wasp new` also creates and applies the initial database migration. If it can't (for example, dependency installation failed, or `DATABASE_URL` is set in your environment), it skips the step, prints a warning, and lists the commands you need to run manually, such as `wasp install` and `wasp db migrate-dev`.
 
 - To skip the interactive mode and create a new Wasp project with the default template, use `wasp new <project-name>`.
 
